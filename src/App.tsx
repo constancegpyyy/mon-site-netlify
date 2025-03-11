@@ -19,6 +19,11 @@ import { Register } from './pages/Register';
 function App() {
   return (
     <Layout>
+      {/* Bouton Voir mon panier */}
+      <button className="snipcart-checkout" style={{ position: 'fixed', top: '10px', right: '10px', zIndex: 1000 }}>
+        Voir mon panier
+      </button>
+      
       <Routes>
         {/* Pages principales */}
         <Route path="/" element={<Home />} />
